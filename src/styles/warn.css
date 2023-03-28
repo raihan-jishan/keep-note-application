@@ -1,0 +1,35 @@
+/*  design warn realetd css styling */
+ .warnContainer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+ }
+ .warnContainer i {
+    margin: 6px;
+ }
+.warnContainer h4{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.createAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px  20px ;
+    border: 3px solid var(--PrimaryColor);
+    border-top-right-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    margin-top: 10px;
+    transition: 0.2s;
+    font-weight: 600;
+}
+.createAccount:hover {
+    background-color: var(--onHover);
+    border: 3px solid transparent;
+}
+.createAccount  {
+    color: var(--darkLikeBlack);
+
+}

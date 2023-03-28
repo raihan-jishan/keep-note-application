@@ -1,0 +1,35 @@
+/* layout component */
+.main {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0rem auto;
+}
+.notesContainer h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+.keepConatainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.keepConatainer div{
+  transition: 0.2s;
+}
+.modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.modal-footer button {
+  margin: 5px;
+}

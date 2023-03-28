@@ -1,0 +1,40 @@
+.FormContainer {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.FormContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageContainer img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.imageContainer img {
+    width: 50%;
+}
+.form .forms{
+     margin: 40px;
+}
+.forms input {
+    padding: 9px 20px;
+    margin: 10px;
+    border: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    /* background:  var(--onHover); */
+    border-bottom: 4px solid var(--PrimaryColor);
+    font-size: 1.2rem;
+}
+.forms i {
+    margin: 5px;
+}
+/*  resposibe */
+@media screen and (max-width: 700px) {
+        .FormContainer {
+            flex-direction: column-reverse;
+        }
+}

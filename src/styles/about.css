@@ -1,0 +1,98 @@
+/* this is a simple about.css file to style page related css */
+.aboutLayout {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.title h2 {
+  font-size: 1.8rem;
+}
+/* appFeauture */
+.appFeauture {
+  margin: 20px;
+  font-size: 1.3rem;
+  border-bottom: 3px solid var(--PrimaryColor);
+  width: 220px;
+  border-bottom-left-radius: 1rem;
+}
+/* row */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rows {
+  max-width: 320px;
+  margin: 20px;
+  background-color:  #77777713;
+  padding: 12px 20px;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+.rows:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.rows i{
+  color: var(--PrimaryColor);
+}
+.row a {
+  color: var(--DarkLikeBlack);
+  padding: 5px;
+  border-radius: 1rem;
+  font-weight: 700;
+  background: var(--CustomMadeColor);
+}
+/* array */
+.array {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:20px ;
+}
+.arrays i {
+  color: var(--PrimaryColor); 
+}
+.arrays{
+  border-bottom: 2px solid var(--PrimaryColor);
+  max-width: 320px;
+}
+.btnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* socialLinks */
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.links i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.links{
+  border-radius: 1rem;
+}
+ 
+/* responsibe */
+@media screen and (max-width:700px) {
+    .row{
+        flex-direction: column;
+    }
+    .array{
+      flex-direction: column;
+    }
+    .arrays {
+      
+      margin-top: 20px;
+    }
+}

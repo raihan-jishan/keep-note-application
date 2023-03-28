@@ -1,0 +1,53 @@
+/*  home css file to designed the whole hero section */
+.homeLayout{
+  margin: 1rem;
+  padding:1rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* row */
+.row img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row img {
+  width: 60%;
+  margin: 20px auto;
+}
+.container h2 {
+  font-size: 1.8rem;
+}
+/* logo */
+.logoCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkLikeBlack);
+  background: var(--CustomMadeColor);
+  border-radius: 0.6rem;
+}
+/*  responsibe */
+@media screen and (max-width: 700px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+    .row img {
+      width: 70%;
+    }
+    .container h2{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .btnCenter{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+    }
+  
+}
+ 

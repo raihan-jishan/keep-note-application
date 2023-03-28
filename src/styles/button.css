@@ -1,0 +1,16 @@
+/* button componnet class styling */
+.addBtn {
+    color: var(--darkLikeBlack);
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: linear-gradient(var(--convinationLinearTwo));
+    padding: 8px 50px;
+    border-radius: 0.4rem;
+  }
+  .addBtn:hover {
+    background-color: var(--PrimaryColor);
+  }
+  .button {
+    margin-top: 20px;
+  }
+  

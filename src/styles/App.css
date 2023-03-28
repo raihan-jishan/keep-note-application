@@ -1,0 +1,25 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+/* initilaze a common variable theme color */
+:root {
+  --PrimaryColor: #01b698da; /* main theme color  */
+  --shadowPrimaryColor: #01b698d2; /* like as primary color but some tarnsparent  */
+  --darkLikeBlack: #242424; /* secondary color  */
+  /* linear gradient css var */
+  --convaniationLinear: #242424, #01b698da;
+  --convinationLinearTwo: #01b698bb, #01b698c4;
+  --CustomMadeColor: #01b69827; /* some transparent effect on that */
+  --onHover: #01b69893;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
