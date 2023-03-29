@@ -1,3 +1,19 @@
+/* alertContainer */
+.alertContainer {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+
+  position: sticky;
+}
+.alertContainer {
+  background: var(--darkLikeBlack);
+  padding: 50px 50px;
+  color: var(--PrimaryColor);
+}
+ .center { 
+   text-align: center;
+}
 /* videos component */
 .videos {
   width: 100%;
