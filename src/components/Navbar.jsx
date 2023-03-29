@@ -5,12 +5,12 @@ import { useNavigate } from "react-router-dom";
 import Brand from "./logo/Brand";
 const Navbar = () => {
   // declared useNaviagete fun
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   // hnadleLogOut func
   const handleLogOut = () => {
-      localStorage.removeItem('token');
-      navigate("/login");
-  }
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
   // initialize hooks
   const [click, setClick] = useState();
   // handle Clcik func
@@ -43,57 +43,54 @@ const Navbar = () => {
               About
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              onClick={closeMobileMenu}
-              to="/addnote"
-              className={({ isActive }) => (isActive ? "active" : null)}
-            >
-              Add Note
-            </NavLink>
-          </li>
-          <li>
-            {!localStorage.getItem("token") ? (
-        
-        null
-
-            ): (
+          {!localStorage.getItem("token") ? null : (
+            <li>
               <NavLink
-              onClick={closeMobileMenu}
-              to="/mynotes"
-              className={({ isActive }) => (isActive ? "active" : null)}
-            >
-              MyNotes
-            </NavLink>
+                onClick={closeMobileMenu}
+                to="/addnote"
+                className={({ isActive }) => (isActive ? "active" : null)}
+              >
+                Add Note
+              </NavLink>
+            </li>
+          )}
+          <li>
+            {!localStorage.getItem("token") ? null : (
+              <NavLink
+                onClick={closeMobileMenu}
+                to="/mynotes"
+                className={({ isActive }) => (isActive ? "active" : null)}
+              >
+                MyNotes
+              </NavLink>
             )}
           </li>
-            {!localStorage.getItem("token")? 
-            <> 
-          <li>
-          
-            <NavLink
-              onClick={closeMobileMenu}
-              to="/login"
-              className={({ isActive }) => (isActive ? "active" : null)}
-            >
-              Login
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              onClick={closeMobileMenu}
-              to="/signup"
-              className={({ isActive }) => (isActive ? "active" : null)}
-            >
-              SignUp
-            </NavLink>
-          </li>
-          </>
-          : <button onClick={handleLogOut} className="logOut">Logout</button>}
-
-
-
-       
+          {!localStorage.getItem("token") ? (
+            <>
+              <li>
+                <NavLink
+                  onClick={closeMobileMenu}
+                  to="/login"
+                  className={({ isActive }) => (isActive ? "active" : null)}
+                >
+                  Login
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  onClick={closeMobileMenu}
+                  to="/signup"
+                  className={({ isActive }) => (isActive ? "active" : null)}
+                >
+                  SignUp
+                </NavLink>
+              </li>
+            </>
+          ) : (
+            <button onClick={handleLogOut} className="logOut">
+              Logout
+            </button>
+          )}
         </ul>
       </nav>
     </header>
