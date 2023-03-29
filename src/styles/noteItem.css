@@ -4,12 +4,15 @@
   align-items: center;
   justify-content: center;
 
-  position: sticky;
+  position: fixed;
+  top: 0;right: 0;
 }
 .alertContainer {
-  background: var(--darkLikeBlack);
+  background: var(--darkLikeBlack); 
   padding: 50px 50px;
   color: var(--PrimaryColor);
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
  .center { 
    text-align: center;
@@ -38,11 +41,14 @@
 }
 .noteTag {
   font-size: 1.2rem;
-  background-color: var(--onHover);
-  padding: 2.3px;
+  background: var(--onHover);
+  color: var(--darkLikeBlack);
+  font-weight: 600;
+  padding: 2.3px 6px;
   border-top-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+ 
 /* video component */
 .video {
   /* border: 2px solid var(--PrimaryColor); */

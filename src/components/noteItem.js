@@ -16,7 +16,7 @@ const Noteitem = (props) => {
   const handleClose = () => {
     setClick(false)
   }
-  return (
+  return ( 
     <>
      {click ? (
     <div className="alertContainer">
@@ -32,10 +32,11 @@ const Noteitem = (props) => {
 
       ) : null}
     <div className="video">
-      
       <p className="vedioTitle">{note.title}</p>
-      <p className="vedioDesc">{note.description}</p>
+      <p className="vedioDesc">{note.description}</p> 
+      {/* {new Date(date).toGMTString()};  */}
       <p className="noteTag">#{note.tag}</p>
+      <p className="dateAndTime">{note.date}</p>
       <div className="qmeta">
         <i
           className="far fa-trash-alt mx-2"

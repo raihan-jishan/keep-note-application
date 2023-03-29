@@ -53,13 +53,19 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
+            {!localStorage.getItem("token") ? (
+        
+        null
+
+            ): (
+              <NavLink
               onClick={closeMobileMenu}
               to="/mynotes"
               className={({ isActive }) => (isActive ? "active" : null)}
             >
               MyNotes
             </NavLink>
+            )}
           </li>
             {!localStorage.getItem("token")? 
             <> 
