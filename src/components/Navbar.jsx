@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
 import { useNavigate } from "react-router-dom";
 import Brand from "./logo/Brand";
+import LogOut from "../Auth/LogOut";
 const Navbar = () => {
   // declared useNaviagete fun
   const navigate = useNavigate();
@@ -65,6 +66,19 @@ const Navbar = () => {
               </NavLink>
             )}
           </li>
+          {/* account div */}
+          <li>
+            {!localStorage.getItem("token") ? null : (
+              <NavLink
+                onClick={closeMobileMenu}
+                to="/account"
+                className={({ isActive }) => (isActive ? "active" : null)}
+              >
+                Account
+              </NavLink>
+            )}
+          </li>
+          {/* close there  */}
           {!localStorage.getItem("token") ? (
             <>
               <li>
@@ -87,9 +101,7 @@ const Navbar = () => {
               </li>
             </>
           ) : (
-            <button onClick={handleLogOut} className="logOut">
-              Logout
-            </button>
+           <LogOut LogOut={handleLogOut}/>
           )}
         </ul>
       </nav>

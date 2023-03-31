@@ -1,0 +1,13 @@
+/* design the whole account section */
+.infos {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+/* blackConatiner */
+.blackConatiner {
+    background: #000000;
+    border-top: 2px solid var(--PrimaryColor);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+ 
