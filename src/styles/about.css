@@ -95,4 +95,7 @@
       
       margin-top: 20px;
     }
+  .socialLinks {
+        flex-direction: column;
+  }
 }
